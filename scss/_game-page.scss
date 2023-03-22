@@ -1,0 +1,52 @@
+.height-240 {
+  height: 240px;
+  width: 100%;
+}
+
+.height-500 {
+  height: 500px;
+  width: 100%;
+}
+
+h1 {
+  &.finish {
+    opacity: 0.5;
+  }
+}
+
+div.item-container {
+  height: 552px;
+  overflow-y: scroll;
+  position: relative;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  div.item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0 50px;
+    user-select: none;
+  }
+  .selected-item {
+    background: $select-color;
+    position: fixed;
+    top: 443px;
+    z-index: -1;
+    width: 529px;
+    height: 80px;
+  }
+}
+
+div.item-footer {
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1px;
+}

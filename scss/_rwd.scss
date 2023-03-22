@@ -1,0 +1,42 @@
+@media screen and (max-width: 500px) {
+  div.game-container {
+    width: 100%;
+    margin-top: 0;
+    border: none;
+    div.header {
+      font-size: 1.2rem;
+    }
+    h1.countdown {
+      margin-top: 60%;
+    }
+    div.selection-container {
+      top: 100px;
+      div.radio-container {
+        width: 93%;
+        margin: 15px;
+        label {
+          font-size: 1.7rem;
+        }
+        span.best-score {
+          font-size: 1rem;
+          left: 245px;
+        }
+      }
+    }
+    .selection-footer {
+      top: 183px;
+    }
+
+    div.item-container {
+      .selected-item {
+        top: 345px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .best-score {
+    left: 232px;
+  }
+}
